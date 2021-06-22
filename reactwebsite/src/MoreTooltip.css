@@ -1,0 +1,36 @@
+.head_more {
+    margin-top: 9px
+}
+
+.moretooltip > hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -10px;
+    width: 108.5%;
+    height: 0.5px;
+    background-color: lightgray;
+    border: none;
+    
+    
+}
+
+.more__in{
+    display: flex;
+    align-content: center;
+    padding: 0px 7px;
+    margin-top: 10px;
+    
+}
+
+.more__in > span{
+    margin-right: 10px;
+    color: blue;
+    size: 10px;
+}
+
+.more__in:hover{
+    background-color: rgb(245, 243, 243);
+    cursor: pointer;
+}
+
+
