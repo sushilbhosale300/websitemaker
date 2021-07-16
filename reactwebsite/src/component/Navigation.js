@@ -33,7 +33,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional
 import 'tippy.js/themes/light.css'
 import MoreTooltip from './MoreTooltip';
-import AutomationTooltip from '../tooltips/AutomationTooltip'
+// import AutomationTooltip from '../tooltips/AutomationTooltip'
 
 
 
@@ -76,7 +76,7 @@ const Navigation = ( { title } ) => {
                 <Tippy 
                 theme="light"
                 // visible="true"
-                content={<MoreTooltip> </MoreTooltip>}
+                content={<PrintingTooltip> </PrintingTooltip>}
                 interactive="true">
                 <span>Printing</span>
                 </Tippy>
@@ -89,7 +89,7 @@ const Navigation = ( { title } ) => {
                 <Tippy 
                 theme="light"
                 // visible="true"
-                content={<MoreTooltip> </MoreTooltip>}
+                content={<PackagingTooltip> </PackagingTooltip>}
                 interactive="true">
                 <span>Packaging</span>
                 </Tippy>
@@ -102,7 +102,7 @@ const Navigation = ( { title } ) => {
                 <Tippy 
                 theme="light"
                 // visible="true"
-                content={<MoreTooltip> </MoreTooltip>}
+                content={<IndustrialTooltip> </IndustrialTooltip>}
                 interactive="true">
                 <span>Industrial</span>
                 </Tippy>
@@ -115,7 +115,7 @@ const Navigation = ( { title } ) => {
                 <Tippy 
                 theme="light"
                 // visible="true"
-                content={<MoreTooltip> </MoreTooltip>}
+                content={<ServicesTooltip> </ServicesTooltip>}
                 interactive="true">
                 <span>Services</span>
                 </Tippy>
@@ -128,7 +128,7 @@ const Navigation = ( { title } ) => {
                 <Tippy 
                 theme="light"
                 // visible="true"
-                content={<MoreTooltip> </MoreTooltip>}
+                content={<OfferZoneTooltip> </OfferZoneTooltip>}
                 interactive="true">
                 <span>Offer Zone</span>
                 </Tippy>
@@ -140,5 +140,190 @@ const Navigation = ( { title } ) => {
         </div>
     )
 }
+
+// Tooltip for Automation
+
+const AutomationTooltip = () => {
+    return (
+        <div className="moretooltip">
+            <div className="more__in">
+                {/* <span><NotificationsIcon /></span> */}
+                <p>Conveyor</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><BusinessCenterIcon /></span> */}
+                <p>2 & 3 Axis Robots</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>Winder-Rewinder</p>        
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><TrendingUpIcon /></span> */}
+                <p>Robots</p>
+            </div>
+            {/* <hr />
+            <div className="more__in">
+                <span><GetAppIcon /></span>
+                <p> Download App </p>
+            </div> */}
+           
+            
+        </div>
+    )
+}
+
+// Tooltip for Printing
+
+const PrintingTooltip = () => {
+    return (
+        <div className="moretooltip">
+            <div className="more__in">
+                {/* <span><NotificationsIcon /></span> */}
+                <p>Labels & Stickers</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><BusinessCenterIcon /></span> */}
+                <p>Ribbons & Printers</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>Paper, Films & Tapes</p>        
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><TrendingUpIcon /></span> */}
+                <p>Inks & Solvents</p>
+            </div>    
+        </div>
+    )
+}
+
+// Tooltip for Packaging
+
+const PackagingTooltip = () => {
+    return (
+        <div className="moretooltip">
+            <div className="more__in">
+                {/* <span><NotificationsIcon /></span> */}
+                <p>Labelling</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><BusinessCenterIcon /></span> */}
+                <p>Case Packing</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>Palletizing</p>        
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><TrendingUpIcon /></span> */}
+                <p>Warehousing</p>
+            </div>    
+        </div>
+    )
+}
+
+// Tooltip for Industrial
+
+const IndustrialTooltip = () => {
+    return (
+        <div className="moretooltip">
+            <div className="more__in">
+                {/* <span><NotificationsIcon /></span> */}
+                <p>Machine Equipments</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><BusinessCenterIcon /></span> */}
+                <p>Tools & Accessories</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>Tools & Equipment's</p>        
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><TrendingUpIcon /></span> */}
+                <p>Hardware's & Consumables</p>
+            </div>    
+        </div>
+    )
+}
+
+// Tooltip for Services
+
+const ServicesTooltip = () => {
+    return (
+        <div className="moretooltip">
+            <div className="more__in">
+                {/* <span><NotificationsIcon /></span> */}
+                <p>Job-Works & Projects</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><BusinessCenterIcon /></span> */}
+                <p>Rental & Refurbished</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>Jobs & Career</p>        
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><TrendingUpIcon /></span> */}
+                <p>Social Service</p>
+            </div>    
+        </div>
+    )
+}
+
+
+
+// Tooltip for OfferZone
+
+const OfferZoneTooltip = () => {
+    return (
+        <div className="moretooltip">
+            <div className="more__in">
+                {/* <span><NotificationsIcon /></span> */}
+                <p>January Offer</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><BusinessCenterIcon /></span> */}
+                <p>February Offer</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>March Offer</p>        
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><TrendingUpIcon /></span> */}
+                <p>April Offer</p>
+            </div>
+            <hr />
+            <div className="more__in">
+                {/* <span><LiveHelpIcon /></span> */}
+                <p>May Offer</p>        
+            </div>
+            <hr />    
+        </div>
+    )
+}
+
+
 
 export default Navigation;

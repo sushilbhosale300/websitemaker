@@ -56,13 +56,15 @@
   background-color: hotpink;
 } */
 
-body{
-  background: green;
+
+
+#mainapp{
+  background: #e2e4e5;
 }
 
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next{
-  background: white;
+  background:white;
   color: black;
   width: 47px;
   height: 104px;
@@ -70,11 +72,14 @@ body{
   align-items: center;
   justify-content: center;
   z-index: 1;
-  margin: 0 20px;
+  margin: 0 12px;
+  box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
 }
 
+
+
 .slick-prev{
-  left: -10px;
+  left: 50px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -82,4 +87,33 @@ body{
 .slick-prev::before,
 .slick-next::before{
   display: none;
+}
+
+.slick-prev:hover,
+.slick-next:hover{
+  background:white;
+  color: black;
+  width: 47px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin: 0 12px;
+  box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
+ 
+}
+
+.slick-arrow.slick-prev, .slick-arrow.slick-next:hover{
+  transition: none;
+  background:white;
+  color: black;
+  width: 47px;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin: 0 12px;
+  box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
 }

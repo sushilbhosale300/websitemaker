@@ -30,9 +30,9 @@ const ImageSlider = () => {
     return (
             <div style={{ padding: "12px" }}>
             <Slider
-            // autoplay 
-            // autoplaySpeed={}
-            // infinite
+            autoplay 
+            autoplaySpeed={2000}
+            infinite
             prevArrow ={<PreviousBtn />}
             nextArrow = {<NextBtn />}
             >
@@ -42,13 +42,12 @@ const ImageSlider = () => {
                             <img src={item} alt="img__4" style={{ width: "100%", height: "280px" }}/>
                         </div>
                     ))
-                }
-                
+                }    
             </Slider>
         </div>
         
         
-    )
-}
+    );
+};
 
 export default ImageSlider

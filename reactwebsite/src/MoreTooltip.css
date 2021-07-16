@@ -1,9 +1,10 @@
-.head_more {
-    margin-top: 9px
+*, ::after, ::before{
+    box-sizing: unset;
 }
 
+
 .moretooltip > hr{
-    margin-top: 0px;
+    margin-top: 1px;
     margin-bottom: 0px;
     margin-left: -10px;
     width: 108.5%;
@@ -33,4 +34,12 @@
     cursor: pointer;
 }
 
-
+.logintooltip{
+    width: 300px;
+    padding: 10px;
+    margin-top: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
